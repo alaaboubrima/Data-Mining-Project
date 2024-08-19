@@ -414,7 +414,7 @@ QPushButton:hover{
      <rect>
       <x>60</x>
       <y>70</y>
-      <width>237</width>
+      <width>235</width>
       <height>291</height>
      </rect>
     </property>
@@ -727,6 +727,28 @@ QRadioButton:hover{
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
+   <widget class="QTextBrowser" name="textBrowser_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>870</y>
+      <width>321</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextBrowser{
+ 
+   background-color: #E5E8E8;
+	font: 25 11pt &quot;URW Bookman&quot;;
+    font-size:20px;
+    color: #000000;
+    border-radius: 20px;
+
+}
+</string>
+    </property>
+   </widget>
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
@@ -795,37 +817,6 @@ QPushButton:hover{
     </property>
     <property name="orientation">
      <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_6">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>870</y>
-      <width>151</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-    background: #FFFFFF;
-    background-color:#CCD1D1;
-	font: 25 11pt &quot;URW Bookman&quot;;
-    border: 2px solid #000000; 
-    border-radius: 5px; 
-    font-size:20px;
-    color: #19060f;
-
-}
-QPushButton:hover{
-     border: 2px solid #6E89E2; 
-     background: #FFFFFF;
-      background-color:#FFFFFF;
-      color: #000000;
-}</string>
-    </property>
-    <property name="text">
-     <string>compare</string>
     </property>
    </widget>
   </widget>

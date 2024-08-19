@@ -8,14 +8,14 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCan  
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCan
 import matplotlib.pyplot as plt
 
 
 class Ui_page3(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1920, 1080)
+        MainWindow.resize(1920, 1009)
         MainWindow.setStyleSheet("background-color: #E5E8E8;\n"
 "\n"
 "\n"
@@ -23,7 +23,7 @@ class Ui_page3(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(240, 120, 151, 41))
+        self.pushButton.setGeometry(QtCore.QRect(180, 110, 131, 41))
         self.pushButton.setStyleSheet("QPushButton{\n"
 "    background: #FFFFFF;\n"
 "    background-color:#CCD1D1;\n"
@@ -40,13 +40,9 @@ class Ui_page3(object):
 "      background-color:#FFFFFF;\n"
 "      color: #000000;\n"
 "}")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("box-plot.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-        self.pushButton.setIcon(icon)
-        self.pushButton.setAutoRepeatDelay(300)
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(80, 60, 151, 41))
+        self.pushButton_2.setGeometry(QtCore.QRect(40, 50, 131, 41))
         self.pushButton_2.setStyleSheet("QPushButton{\n"
 "    background: #FFFFFF;\n"
 "    background-color:#CCD1D1;\n"
@@ -65,7 +61,7 @@ class Ui_page3(object):
 "}")
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_3.setGeometry(QtCore.QRect(79, 120, 151, 41))
+        self.pushButton_3.setGeometry(QtCore.QRect(39, 110, 131, 41))
         self.pushButton_3.setStyleSheet("QPushButton{\n"
 "    background: #FFFFFF;\n"
 "    background-color:#CCD1D1;\n"
@@ -84,7 +80,7 @@ class Ui_page3(object):
 "}")
         self.pushButton_3.setObjectName("pushButton_3")
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit.setGeometry(QtCore.QRect(330, 310, 113, 25))
+        self.lineEdit.setGeometry(QtCore.QRect(50, 560, 113, 25))
         self.lineEdit.setStyleSheet("QLineEdit{\n"
 "    background: #FFFFFF;\n"
 "    background-color:#CCD1D1;\n"
@@ -103,7 +99,7 @@ class Ui_page3(object):
 "}")
         self.lineEdit.setObjectName("lineEdit")
         self.lineEdit_2 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_2.setGeometry(QtCore.QRect(330, 360, 113, 25))
+        self.lineEdit_2.setGeometry(QtCore.QRect(50, 590, 113, 25))
         self.lineEdit_2.setStyleSheet("QLineEdit{\n"
 "    background: #FFFFFF;\n"
 "    background-color:#CCD1D1;\n"
@@ -122,7 +118,7 @@ class Ui_page3(object):
 "}")
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(320, 260, 161, 31))
+        self.label.setGeometry(QtCore.QRect(40, 520, 161, 31))
         self.label.setStyleSheet("QLabel{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -134,7 +130,7 @@ class Ui_page3(object):
 "")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(70, 260, 171, 31))
+        self.label_2.setGeometry(QtCore.QRect(40, 180, 171, 31))
         self.label_2.setStyleSheet("QLabel{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -146,7 +142,7 @@ class Ui_page3(object):
 "")
         self.label_2.setObjectName("label_2")
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_4.setGeometry(QtCore.QRect(50, 600, 171, 41))
+        self.pushButton_4.setGeometry(QtCore.QRect(110, 670, 171, 41))
         self.pushButton_4.setAutoFillBackground(False)
         self.pushButton_4.setStyleSheet("QPushButton{\n"
 "    background: #FFFFFF;\n"
@@ -165,12 +161,12 @@ class Ui_page3(object):
 "      color: #000000;\n"
 "}")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("administration.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
+        icon.addPixmap(QtGui.QPixmap(":/newPrefix/administration.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         self.pushButton_4.setIcon(icon)
         self.pushButton_4.setAutoRepeatDelay(296)
         self.pushButton_4.setObjectName("pushButton_4")
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
-        self.label_5.setGeometry(QtCore.QRect(60, 700, 201, 31))
+        self.label_5.setGeometry(QtCore.QRect(60, 750, 201, 31))
         self.label_5.setStyleSheet("QLabel{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -182,7 +178,7 @@ class Ui_page3(object):
 "")
         self.label_5.setObjectName("label_5")
         self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser.setGeometry(QtCore.QRect(290, 700, 161, 41))
+        self.textBrowser.setGeometry(QtCore.QRect(290, 780, 161, 41))
         self.textBrowser.setStyleSheet("QTextBrowser{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -195,7 +191,7 @@ class Ui_page3(object):
 "")
         self.textBrowser.setObjectName("textBrowser")
         self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.layoutWidget.setGeometry(QtCore.QRect(70, 290, 235, 291))
+        self.layoutWidget.setGeometry(QtCore.QRect(40, 210, 235, 291))
         self.layoutWidget.setObjectName("layoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.layoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -413,7 +409,7 @@ class Ui_page3(object):
         self.tableWidget.setColumnCount(0)
         self.tableWidget.setRowCount(0)
         self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_5.setGeometry(QtCore.QRect(240, 60, 151, 41))
+        self.pushButton_5.setGeometry(QtCore.QRect(180, 50, 131, 41))
         self.pushButton_5.setStyleSheet("QPushButton{\n"
 "    background: #FFFFFF;\n"
 "    background-color:#CCD1D1;\n"
@@ -432,7 +428,7 @@ class Ui_page3(object):
 "}")
         self.pushButton_5.setObjectName("pushButton_5")
         self.textBrowser_3 = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser_3.setGeometry(QtCore.QRect(290, 770, 161, 41))
+        self.textBrowser_3.setGeometry(QtCore.QRect(290, 820, 161, 41))
         self.textBrowser_3.setStyleSheet("QTextBrowser{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -445,7 +441,7 @@ class Ui_page3(object):
 "")
         self.textBrowser_3.setObjectName("textBrowser_3")
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
-        self.label_6.setGeometry(QtCore.QRect(60, 770, 201, 31))
+        self.label_6.setGeometry(QtCore.QRect(60, 790, 201, 31))
         self.label_6.setStyleSheet("QLabel{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -457,7 +453,7 @@ class Ui_page3(object):
 "")
         self.label_6.setObjectName("label_6")
         self.textBrowser_4 = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser_4.setGeometry(QtCore.QRect(290, 840, 161, 41))
+        self.textBrowser_4.setGeometry(QtCore.QRect(290, 860, 161, 41))
         self.textBrowser_4.setStyleSheet("QTextBrowser{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -470,7 +466,7 @@ class Ui_page3(object):
 "")
         self.textBrowser_4.setObjectName("textBrowser_4")
         self.label_7 = QtWidgets.QLabel(self.centralwidget)
-        self.label_7.setGeometry(QtCore.QRect(60, 840, 201, 31))
+        self.label_7.setGeometry(QtCore.QRect(60, 830, 201, 31))
         self.label_7.setStyleSheet("QLabel{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -482,7 +478,7 @@ class Ui_page3(object):
 "")
         self.label_7.setObjectName("label_7")
         self.textBrowser_5 = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser_5.setGeometry(QtCore.QRect(250, 930, 161, 41))
+        self.textBrowser_5.setGeometry(QtCore.QRect(290, 920, 161, 41))
         self.textBrowser_5.setStyleSheet("QTextBrowser{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -495,7 +491,7 @@ class Ui_page3(object):
 "")
         self.textBrowser_5.setObjectName("textBrowser_5")
         self.label_8 = QtWidgets.QLabel(self.centralwidget)
-        self.label_8.setGeometry(QtCore.QRect(60, 910, 161, 31))
+        self.label_8.setGeometry(QtCore.QRect(60, 870, 321, 31))
         self.label_8.setStyleSheet("QLabel{\n"
 " \n"
 "   background-color: #E5E8E8;\n"
@@ -506,20 +502,9 @@ class Ui_page3(object):
 "}\n"
 "")
         self.label_8.setObjectName("label_8")
-        self.label_9 = QtWidgets.QLabel(self.centralwidget)
-        self.label_9.setGeometry(QtCore.QRect(60, 940, 161, 31))
-        self.label_9.setStyleSheet("QLabel{\n"
-" \n"
-"   background-color: #E5E8E8;\n"
-"    font: 25 11pt \"URW Bookman\";\n"
-"    font-size:25px;\n"
-"    color: #000000;\n"
-"\n"
-"}\n"
-"")
-        self.label_9.setObjectName("label_9")
+
         self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_6.setGeometry(QtCore.QRect(150, 180, 171, 41))
+        self.pushButton_6.setGeometry(QtCore.QRect(320, 50, 141, 41))
         self.pushButton_6.setStyleSheet("QPushButton{\n"
 "    background: #FFFFFF;\n"
 "    background-color:#CCD1D1;\n"
@@ -537,6 +522,7 @@ class Ui_page3(object):
 "      color: #000000;\n"
 "}")
         self.pushButton_6.setObjectName("pushButton_6")
+
         # oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
         self.horizontalLayout_12 = QtWidgets.QVBoxLayout(self.frame_2)
         self.horizontalLayout_12.setObjectName("horizontalLayout_12")
@@ -566,27 +552,31 @@ class Ui_page3(object):
         # oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 
         self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_7.setGeometry(QtCore.QRect(240, 600,  171, 41))
+        self.pushButton_7.setGeometry(QtCore.QRect(240, 600, 171, 41))
         self.pushButton_7.setStyleSheet("QPushButton{\n"
-        "    background: #FFFFFF;\n"
-        "    background-color:#CCD1D1;\n"
-        "    font: 25 11pt \"URW Bookman\";\n"
-        "    border: 2px solid #000000; \n"
-        "    border-radius: 5px; \n"
-        "    font-size:20px;\n"
-        "    color: #19060f;\n"
-        "\n"
-        "}\n"
-        "QPushButton:hover{\n"
-        "     border: 2px solid #6E89E2; \n"
-        "     background: #FFFFFF;\n"
-        "      background-color:#FFFFFF;\n"
-        "      color: #000000;\n"
-        "}")
-        self.pushButton_7.setObjectName("pushButton_7")        
+                                        "    background: #FFFFFF;\n"
+                                        "    background-color:#CCD1D1;\n"
+                                        "    font: 25 11pt \"URW Bookman\";\n"
+                                        "    border: 2px solid #000000; \n"
+                                        "    border-radius: 5px; \n"
+                                        "    font-size:20px;\n"
+                                        "    color: #19060f;\n"
+                                        "\n"
+                                        "}\n"
+                                        "QPushButton:hover{\n"
+                                        "     border: 2px solid #6E89E2; \n"
+                                        "     background: #FFFFFF;\n"
+                                        "      background-color:#FFFFFF;\n"
+                                        "      color: #000000;\n"
+                                        "}")
+        self.pushButton_7.setObjectName("pushButton_7")
 
 
-
+        self.line = QtWidgets.QFrame(self.centralwidget)
+        self.line.setGeometry(QtCore.QRect(480, -20, 20, 1071))
+        self.line.setFrameShape(QtWidgets.QFrame.VLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -597,10 +587,10 @@ class Ui_page3(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Apprentissage Non Supervisé"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton.setText(_translate("MainWindow", "Box-Plot"))
         self.pushButton_2.setText(_translate("MainWindow", "Data-Num"))
-        self.pushButton_3.setText(_translate("MainWindow", "Vésualisation"))
+        self.pushButton_3.setText(_translate("MainWindow", "Visualisation"))
         self.label.setText(_translate("MainWindow", "Paramètres :"))
         self.label_2.setText(_translate("MainWindow", "Algorithme :"))
         self.pushButton_4.setText(_translate("MainWindow", " Exécuter"))
@@ -614,12 +604,11 @@ class Ui_page3(object):
         self.label_6.setText(_translate("MainWindow", "inertie intre :"))
         self.label_7.setText(_translate("MainWindow", "inertie total :"))
         self.label_8.setText(_translate("MainWindow", "coefficient de corrélation :"))
-        self.label_9.setText(_translate("MainWindow", " corrélation :"))
-        self.pushButton_6.setText(_translate("MainWindow", "courbe d’Elbow"))
+        self.pushButton_6.setText(_translate("MainWindow", "Courbe d’Elbow"))
         self.pushButton_7.setText(_translate("MainWindow", "comparaison "))
 
 
-"""
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
@@ -628,5 +617,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-
-"""

@@ -71,15 +71,14 @@ QPushButton:hover{
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>0</y>
+     <x>-110</x>
+     <y>-80</y>
      <width>2121</width>
      <height>1711</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/newPrefix/social-data-mining.png);
-background-repeat: no-repeat;</string>
+    <string notr="true">background-image: url(:/newPrefix/social-data-mining.png);</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -261,7 +260,7 @@ QTextEdit:hover{
   <zorder>browse</zorder>
  </widget>
  <resources>
-  <include location="ime.qrc"/>
+  <include location="image.qrc"/>
  </resources>
  <connections/>
 </ui>

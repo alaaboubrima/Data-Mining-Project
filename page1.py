@@ -11,15 +11,13 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog, QFileDialog
 
 
-
-
 class Ui_DATAMINING(QDialog):
     def setupUi(self, DATAMINING):
         DATAMINING.setObjectName("DATAMINING")
-        DATAMINING.resize(1920, 1000)
+        DATAMINING.resize(1920, 1009)
         DATAMINING.setStyleSheet("background-color: #E5E8E8;")
         self.browse = QtWidgets.QPushButton(DATAMINING)
-        self.browse.setGeometry(QtCore.QRect(1390, 500, 170, 40))
+        self.browse.setGeometry(QtCore.QRect(1180, 580, 201, 51))
         font = QtGui.QFont()
         font.setFamily("URW Bookman")
         font.setPointSize(-1)
@@ -44,17 +42,15 @@ class Ui_DATAMINING(QDialog):
 "      background-color:#FFFFFF;\n"
 "      color: #000000;\n"
 "}")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("icons8-import-64.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-        self.browse.setIcon(icon)
-        self.browse.setIconSize(QtCore.QSize(30, 30))
+
         self.browse.setObjectName("browse")
         self.widget = QtWidgets.QWidget(DATAMINING)
-        self.widget.setGeometry(QtCore.QRect(360, -110, 1200, 560))
-        self.widget.setStyleSheet("background-image: url(social-data-mining.png);")
+        self.widget.setGeometry(QtCore.QRect(400, 0, 2121, 1711))
+        self.widget.setStyleSheet("background-image: url(social-data-mining.png);\n"
+"background-repeat: no-repeat;")
         self.widget.setObjectName("widget")
         self.pushButton = QtWidgets.QPushButton(DATAMINING)
-        self.pushButton.setGeometry(QtCore.QRect(1600, 890, 201, 51))
+        self.pushButton.setGeometry(QtCore.QRect(1180, 650, 201, 51))
         self.pushButton.setStyleSheet("QPushButton{\n"
 "    background: #FFFFFF;\n"
 "    background-color:#CCD1D1;\n"
@@ -72,12 +68,12 @@ class Ui_DATAMINING(QDialog):
 "      color: #000000;\n"
 "}")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("right.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
+        icon1.addPixmap(QtGui.QPixmap(":/newPrefix/right.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         self.pushButton.setIcon(icon1)
         self.pushButton.setIconSize(QtCore.QSize(30, 30))
         self.pushButton.setObjectName("pushButton")
         self.layoutWidget = QtWidgets.QWidget(DATAMINING)
-        self.layoutWidget.setGeometry(QtCore.QRect(460, 640, 711, 61))
+        self.layoutWidget.setGeometry(QtCore.QRect(480, 650, 691, 51))
         self.layoutWidget.setObjectName("layoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
@@ -157,7 +153,7 @@ class Ui_DATAMINING(QDialog):
         self.radioButton_2.setObjectName("radioButton_2")
         self.horizontalLayout.addWidget(self.radioButton_2)
         self.textEdit = QtWidgets.QTextEdit(DATAMINING)
-        self.textEdit.setGeometry(QtCore.QRect(360, 500, 900, 39))
+        self.textEdit.setGeometry(QtCore.QRect(480, 580, 691, 51))
         self.textEdit.setStyleSheet("QTextEdit{\n"
 "    background: #FFFFFF;\n"
 "    background-color:#CCD1D1;\n"
@@ -175,6 +171,11 @@ class Ui_DATAMINING(QDialog):
 "      color: #000000;\n"
 "}")
         self.textEdit.setObjectName("textEdit")
+        self.widget.raise_()
+        self.pushButton.raise_()
+        self.layoutWidget.raise_()
+        self.textEdit.raise_()
+        self.browse.raise_()
 
         self.retranslateUi(DATAMINING)
         QtCore.QMetaObject.connectSlotsByName(DATAMINING)
@@ -182,23 +183,11 @@ class Ui_DATAMINING(QDialog):
     def retranslateUi(self, DATAMINING):
         _translate = QtCore.QCoreApplication.translate
         DATAMINING.setWindowTitle(_translate("DATAMINING", "DATA MINING"))
-        self.browse.setText(_translate("DATAMINING", "Data"))
-        self.pushButton.setText(_translate("DATAMINING", " Next"))
+        self.browse.setText(_translate("DATAMINING", "Importe DataSet"))
+        self.pushButton.setText(_translate("DATAMINING", "Suivant"))
         self.radioButton.setText(_translate("DATAMINING", "Apprentissage Supervisé"))
         self.radioButton_2.setText(_translate("DATAMINING", "Apprentissage Non Supervisé"))
-"""
 
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    DATAMINING = QtWidgets.QMainWindow()
-    ui = Ui_DATAMINING()
-    ui.setupUi(DATAMINING)
-    DATAMINING.show()
-    
-    
 
-    sys.exit(app.exec_())
-"""
